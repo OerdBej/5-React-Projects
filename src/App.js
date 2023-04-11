@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <div>
-        <Button success primary rounded outline>
+        <Button success rounded outline>
           Click Me
         </Button>
       </div>
@@ -18,10 +18,15 @@ function App() {
         <Button warning>See Deal</Button>
       </div>
       <div>
-        <Button>What</Button>
+        <Button secondary outline>
+          Hide Ads
+        </Button>
       </div>
       <div>
-        <Button>Open Source</Button>
+        {/* primary is true */}
+        <Button primary rounded>
+          Something
+        </Button>
       </div>
     </div>
   );
