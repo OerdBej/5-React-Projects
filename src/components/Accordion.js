@@ -7,12 +7,11 @@ const Accordion = ({ items }) => {
     // loop from all data props
     const renderedItems = items.map((item, index) => {
         const isExpanded = index === expandedIndex;
-        console.log(isExpanded);
 
         return (
             <div key={item.id}>
                 <div>{item.label}</div>
-                <div>{item.content}</div>
+                <div>{isExpanded && <div>{item.content} </div>}</div>
             </div>
         );
     });
