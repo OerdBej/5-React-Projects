@@ -6,13 +6,14 @@ const App = () => {
         {
             id: 'lk2kj5',
             label: 'AeroSmith',
-            content: 'Remember, the light at the end of the tunnel may be you.',
+            content:
+                '🌻 Remember, the light at the end of the tunnel may be you. 🌻',
         },
         {
             id: 'lk2kk5',
             label: 'Nirvana',
             content:
-                'Wanting to be someone else is a waste of the person you are.',
+                '🎸 Wanting to be someone else is a waste of the person you are. 🎸',
         },
         {
             id: 'lk2kh5',
