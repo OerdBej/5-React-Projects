@@ -1,28 +1,28 @@
 const questions = [
     {
         id: 1,
-        title: 'Do I have to allow the use of cookies?',
-        info: 'Unicorn vinyl poutine brooklyn, next level direct trade iceland. Shaman copper mug church-key coloring book, whatever poutine normcore fixie cred kickstarter post-ironic street art.',
+        title: 'What is JavaScript, and what are its key features?',
+        info: 'JavaScript is dynamically typed, object-oriented, primarily used as a client-side scripting language, supports functional programming, and has built-in support for asynchronous programming. These features make JavaScript a versatile language that can handle a wide range of programming tasks.',
     },
     {
         id: 2,
-        title: 'How do I change my My Page password?',
-        info: 'Coloring book forage photo booth gentrify lumbersexual. Migas chillwave poutine synth shoreditch, enamel pin thundercats fashion axe roof party polaroid chartreuse.',
+        title: 'What is the difference between let, var, and const in JavaScript?',
+        info: 'The difference between let, var, and const in JavaScript is that let and const are block-scoped, while var is function-scoped. Additionally, const is a constant variable that cannot be reassigned, while let and var are mutable variables that can be reassigned.',
     },
     {
         id: 3,
-        title: 'What is BankID?',
-        info: 'Enamel pin fam sustainable woke whatever venmo. Authentic asymmetrical put a bird on it, lumbersexual activated charcoal kinfolk banjo cred pickled sartorial.',
+        title: 'How does event bubbling work in JavaScript, and how can it be prevented?',
+        info: 'Event bubbling in JavaScript is when an event on a nested element triggers listeners on its parent elements, but it can be stopped using event.stopPropagation().',
     },
     {
         id: 4,
-        title: 'Whose birth number can I use?',
-        info: 'Edison bulb direct trade gentrify beard lo-fi seitan sustainable roof party franzen occupy squid. Knausgaard cronut succulents, scenester readymade shabby chic lyft. Copper mug meh vegan gentrify.',
+        title: 'What is a closure in JavaScript, and how is it used?',
+        info: 'A closure in JavaScript is a function that can access variables from its outer function even after that function has returned. Closures are often used to create private variables and functions, maintain state between function calls, and in event handlers and callbacks.',
     },
     {
         id: 5,
-        title: 'When do I recieve a password ordered by letter?',
-        info: 'Locavore franzen fashion axe live-edge neutra irony synth af tilde shabby chic man braid chillwave waistcoat copper mug messenger bag. Banjo snackwave blog, microdosing thundercats migas vaporware viral lo-fi seitan ',
+        title: 'How does asynchronous programming work in JavaScript, and what are some commonly used techniques for handling asynchronous code?',
+        info: 'JavaScript is asynchronous programming executes code without blocking the main thread, and can be done with callbacks, promises, or async/await. Common techniques include error handling with try/catch, await to wait for promises, and Promise.all() for parallel operations.',
     },
 ];
 export default questions;

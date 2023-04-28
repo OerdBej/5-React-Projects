@@ -4,7 +4,7 @@ import SingleQuestion from './SingleQuestion';
 const Questions = ({ questions, activeId, toggleQuestion }) => {
     return (
         <section className='container'>
-            <h1>Questions</h1>
+            <h1>Test your JavaScript Knoledge</h1>
             {/* iterate through props */}
 
             {questions.map((question) => {
