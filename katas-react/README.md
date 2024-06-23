@@ -1,8 +1,9 @@
-# React + Vite
+# React Katas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **React Katas** repository! This collection is dedicated to practicing and mastering typical interview questions and challenges related to React. Each kata is designed to focus on React concepts and problem-solving without spending too much time on CSS styling.
 
-Currently, two official plugins are available:
+## About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This repository contains various kata projects aimed at helping you sharpen your React skills. Each kata addresses common topics and problems you might encounter in a React interview, providing hands-on practice with real-world scenarios.
+
+Happy coding!
