@@ -10,6 +10,7 @@ const Counter = () => {
 
   const counterRef = useRef(null);
   const lastScrollY = useRef(0);
+  const lastScrollTime = useRef(Date.now());
 
   useEffect(() => {
     // Initial animation from 0 to 10
@@ -67,6 +68,7 @@ const Counter = () => {
         });
 
         lastScrollY.current = currentScrollY;
+        lastScrollTime.current = currentTime;
       }
     }
   };
@@ -79,7 +81,7 @@ const Counter = () => {
   return (
     <div
       ref={counterRef}
-      className='flex flex-col justify-center items-center min-h-screen px-20'
+      className='flex flex-col justify-center items-center min-h-screen px-40'
     >
       <div className='flex justify-center items-center gap-20'>
         <div className='text-center border-2 border-red-500 p-4'>
@@ -87,7 +89,7 @@ const Counter = () => {
             <CountUp
               start={values.successRate - 1}
               end={values.successRate}
-              duration={0.2}
+              duration={0.5}
               preserveValue
             />
           </h2>
