@@ -18,4 +18,4 @@ There is also a **Reset** button that resets the state, making the logic start f
 
 This project serves as an exercise to enhance logic and state management skills in React.
 
-![Alt text](assets/accordion.png)
+![Alt text](/Accordion//src/assets/accordian.png)
