@@ -21,13 +21,19 @@ const Accordion = () => {
     console.log(multiID);
   }
 
+  function reset() {
+    setSelectedItem(null);
+    setMultiSelection(false);
+    setMultiID([]);
+  }
+
   return (
     <div className='wrapper'>
       <button
         onClick={() => setMultiSelection(!multiselection)}
         style={{
-          backgroundColor: multiselection ? 'green' : 'red',
-          color: 'white',
+          backgroundColor: multiselection ? '#a8dadc' : '#f4a261', // pastel teal for enabled, pastel orange for disabled
+          color: '#333',
           padding: '10px 20px',
           border: 'none',
           borderRadius: '5px',
@@ -36,6 +42,21 @@ const Accordion = () => {
         }}
       >
         multiple
+      </button>
+      <button
+        onClick={reset}
+        style={{
+          backgroundColor: '#ffc1cc', // pastel pink
+          color: '#333',
+          padding: '10px 20px',
+          border: 'none',
+          borderRadius: '5px',
+          cursor: 'pointer',
+          marginBottom: '20px',
+          marginLeft: '10px',
+        }}
+      >
+        reset
       </button>
       <div className='accordion'>
         {data && data.length > 0 ? (
@@ -52,7 +73,8 @@ const Accordion = () => {
                 <h3>{dataItem.question}</h3>
                 <span>+</span>
                 {/*! 🟢 here from the state 🟢*/}
-                {selectedItem === dataItem.id ? (
+                {selectedItem === dataItem.id ||
+                multiID.indexOf(dataItem.id) !== -1 ? (
                   <div className='content'> {dataItem.answer}</div>
                 ) : null}
               </div>
