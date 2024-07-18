@@ -17,6 +17,7 @@ const Counter = () => {
     const timer = setInterval(() => {
       setValues((prevValues) => {
         const newValues = { ...prevValues };
+        console.log(newValues);
         for (let key in newValues) {
           if (newValues[key] < 10) {
             newValues[key] = Math.min(newValues[key] + 1, 10);
