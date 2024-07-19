@@ -11,3 +11,5 @@ To achieve this functionality, the following libraries have been utilized:
 - [`react-scroll-trigger`](https://www.npmjs.com/package/react-scroll-trigger)
 
 Additionally, the `getBoundingClientRect()` method is used for determining the position of elements on the screen.
+
+![Counter Screenshot](../Counter/src/assets/Counter.png)
