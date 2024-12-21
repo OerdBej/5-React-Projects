@@ -21,6 +21,18 @@ export default function ImageSlider({ url, limit }) {
     }
   }
 
+  useEffect(() => {
+    if (url !== '') fetchImages(url);
+  }, [url]);
+
+  if (loading) {
+    return <div> Loading Data | Make a TypeScript Project</div>;
+  }
+
+  if (error !== null) {
+    return <div>Blah error</div>;
+  }
+
   return <div></div>;
 }
 

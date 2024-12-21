@@ -1,8 +1,12 @@
-import { useState } from 'react';
 import './App.css';
+import ImageSlider from './component/ImageSlider';
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <ImageSlider />
+    </>
+  );
 }
 
 export default App;
