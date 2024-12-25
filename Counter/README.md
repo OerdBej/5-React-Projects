@@ -1,14 +1,15 @@
-# React Counter Project
+## 2. React Counter Project
 
 This GitHub repository contains a React project that features a counter component. The counter animates and counts up when scrolled into view.
 
-## Libraries Used
+### Key Features
+- **Scroll-Activated Animations**: Counter values animate based on scroll position, providing an engaging user experience.
+- **Dynamic UI Updates**: Reactively updates counter values as the user scrolls through the application.
 
-To achieve this functionality, the following libraries have been utilized:
-
-- [`react-countup`](https://www.npmjs.com/package/react-countup)
-- [`tailwindcss`](https://www.npmjs.com/package/tailwindcss)
-- [`react-scroll-trigger`](https://www.npmjs.com/package/react-scroll-trigger)
+### Libraries Used
+- [`react-countup`](https://www.npmjs.com/package/react-countup): Smooth number animation for counters.
+- [`tailwindcss`](https://www.npmjs.com/package/tailwindcss): Utility-first CSS framework for styling.
+- [`react-scroll-trigger`](https://www.npmjs.com/package/react-scroll-trigger): Detects when components come into view.
 
 Additionally, the `getBoundingClientRect()` method is used for determining the position of elements on the screen.
 

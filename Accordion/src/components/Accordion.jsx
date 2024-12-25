@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import data from './data';
 import './style.css';
 
@@ -13,8 +13,8 @@ const Accordion = () => {
 
   function handleMultipleSelection(dataItem) {
     let copyState = [...multiID];
-    //if clicked then remove or push it
     const indexCurrentID = copyState.indexOf(dataItem);
+
     if (indexCurrentID === -1) copyState.push(dataItem);
     else copyState.splice(indexCurrentID, 1);
     setMultiID(copyState);
@@ -58,6 +58,8 @@ const Accordion = () => {
       >
         reset
       </button>
+
+      {/*  here is for the data */}
       <div className='accordion'>
         {data && data.length > 0 ? (
           data.map((dataItem, index) => (
