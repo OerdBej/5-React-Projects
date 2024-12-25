@@ -8,12 +8,20 @@ const LoadMoreData = () => {
   async function fetchProducts() {
     try {
       const response = await fetch(
-        'https://dummyjson.com/products?limit=10&skip=10&select=title,price'
+        `https://dummyjson.com/products?limit=20&skip=${
+          counter === 0 ? 0 : counter * 20
+        }`
       );
-    } catch (error) {}
+      const result = await response.json();
+      console.log(result);
+    } catch (error) {
+      console.log(error.message);
+    }
   }
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    fetchProducts();
+  }, []);
   return <div className='container'>LoadMoreData</div>;
 };
 
