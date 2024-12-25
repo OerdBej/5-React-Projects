@@ -28,4 +28,3 @@ This GitHub repository contains a React project that features a counter componen
 
 Additionally, the `getBoundingClientRect()` method is used for determining the position of elements on the screen.
 
-![Counter Screenshot](../Counter/src/assets/Counter.png)
